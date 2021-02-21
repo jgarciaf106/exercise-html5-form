@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="border rounded">
+            <h2 class="border pt-2 pb-2 pl-3 bg-light">Payment form example</h2>
+            <div class="alert alert-danger ml-3 mr-3" role="alert">
+                <strong>Some fields are missing</strong>
+            </div>
+            <div class="form-row  ml-3 mr-3">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4"><strong>Card #</strong></label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="xxxx-xxxx-xxxx-xxxx">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputPassword4"><strong>CVC #</strong></label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="0000">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputAddress"><strong>Amount</strong></label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="$">
+                </div>
+            </div>
+            <div class="form-row  ml-3 mr-3">
+                <div class="form-group col-md-6">
+                    <label for="inputName"><strong>First Name</strong></label>
+                    <input type="text" class="form-control" id="inputname">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputLastName"><strong>Last Name</strong></label>
+                    <input type="text" class="form-control" id="inputLastName">
+                </div>
+            </div>
+
+
+            <div class="form-row  ml-3 mr-3">
+                <div class="form-group col-md-6">
+                    <label for="inputCity"><strong>City</strong></label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState"><strong>State</strong></label>
+                    <select id="inputState" class="form-control">
+                        <option selected><strong>Pick a state</strong></option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip"><strong>Postal Code</strong></label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-row ml-3 ">
+                <div class="form-row ml-1 mr-2">
+                    <div class="form-group bg-secondary rounded mr-5">
+                        <div class="form-group bg-white">
+                            <label for="exampleFormControlTextarea1"><strong>We accept:</strong></label>
+                        </div>
+                        <div class="form-check ">
+                            <div class="custom-control custom-radio custom-control-inline ">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1"><i
+                                        class="fab fa-cc-mastercard fa-2x"></i></label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline ">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline2"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2"><i
+                                        class="fab fa-cc-visa fa-2x"></i></label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline ">
+                                <input type="radio" id="customRadioInline3" name="customRadioInline3"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline3"><i
+                                        class="fab fa-cc-discover fa-2x"></i></label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline ">
+                                <input type="radio" id="customRadioInline4" name="customRadioInline4"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline4"><i
+                                        class="fab fa-cc-amex fa-2x"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row ml-5">
+                    <div class="form-group ml-5">
+                        <label for="exampleFormControlTextarea1" class="ml-5"><strong>Message</strong></label>
+                        <textarea class="form-control ml-5 " id="exampleFormControlTextarea1" rows="3" cols="63"></textarea>
+                    </div>
+                </div>
+            </div>
+            <h2 class="border pt-2 pb-2 pl-3 bg-light text-right pr-3 pt-1 ">
+                <button type="submit" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </h2>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cc6092f36d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
